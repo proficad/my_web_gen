@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+<title>Kreslení elektrotechnických značek</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    <h1>Kreslení elektrotechnických značek</h1>
+
+    <h2>Změna existující značky</h2>
+    <p>
+        Editace existující značky se spustí dvojklikem na značce v textovém seznamu značek nebo pravým tlačítkem myši v paletě značek.
+    </p>
+
+    <h2>Založení značky</h2>
+    <p>
+        Nová značka se vytvoří příkazem <code>Soubor</code> - <code>Nová značka</code>. Objeví se plocha dokumentu, ve které se nakreslí značka pomocí grafických objektů (čáry, obdélníky atd.).
+    </p>
+    <p>
+        Při vytváření značky je třeba grafické objekty umísťovat tak, aby značka byla rozmístěna symetricky podle os pracovní plochy.
+    </p>
+    <img src="../basic/img/center.png" alt="vycentrovat objekty" style="margin:10px;" />
+    <p>
+        Hotovou značku uložte příkazem <code>Soubor</code> - <code>Uložit</code>, nebo klávesovou zkratkou <code>Ctrl</code>+<code>S</code> nebo touto ikonou: <img border="0" src="../icons/save.png" width="16" height="16" />.
+    </p>
+    <p>
+    Značku je nutné uložit do knihovny značek, tj. do některého adresáře na cestě, která je
+    uvedena v nastavení programu (<code>F12</code> - <code>Cesty</code>).
+    </p>
+
+    <h2>Založení značky podle existující</h2>
+    <p>
+        Pokud plánujete vytvořit značku, která se podobá některé již existující značce v knihovně, je vhodné vytvořit ji jako kopii a pouze změnit rozdíly. Tím se zajistí, že značky v knihovně budou mít konzistentní rozměry, rozmístění vývodů atd.
+    </p>
+    <p>
+        Kliknutí pravým tlačítkem myši na značce (v grafické paletě značek), která slouží jako vzor se objeví menu s dvěma příkazy. První příkaz je <code>otevřít značku</code>. Druhý příkaz je <code>vytvořit podobnou značku</code>.
+    </p>
+    <img alt="vytvořit podobnou značku" src="img/podobna_znacka.png" />
+    <p>
+        Po zvolení tohoto druhého příkazu se objeví dialogové okno. V něm vyplňte název nové značky. Pokud má být značka v jiné skupině, stiskněte tlačítko <code>změnit</code> a vyberte cílovou skupinu.
+    </p>
+    <p>
+        Po potvrzení tlačítkem OK je vytvoření značky dokončeno. Zbývá udělat změny, kterými se nová značka bude lišit od původní (vzorové) a značku uložit.
+    </p>
+    <p>
+        Značky jsou uloženy v souborech s příponou PPD (značky obecně) nebo PICD (integrované obvody).
+    </p>
+
+
+    <h2>Umístění vývodů</h2>
+    <p>
+        Vývody je nutné kreslit zarovnaně. Obrázek ukazuje nesprávně umístěný vývod, který má za následek, že značku nelze ve výkresu zapojit, protože spoj k další značce by nebyl vodorovný.
+    </p>
+    <img src="img/misaligned.png" alt="vývody nejsou zarovnané" style="border: 1px silver solid;" />
+    <p>
+        Většina značek dodávaných s programem byla kreslena s vývody s rozestupy 2 mm, případně 4 mm. Je proto vhodné tyto hodnoty dodržovat i při tvorbě vašich značek.
+    </p>
+    <img src="img/outlet_spacing.png" alt="rozestupy mezi vývody" style="border: 1px silver solid;" />
+    <p>
+        Čísla vývodů, která program zobrazuje v tiskových sestavách jsou odvozeny od pořadí v jakém byly vývody vloženy do značky.
+        Pro kontrolu pořadí vývodů lze použít příkaz <code>Zobrazit - Zobrazit čísla vývodů</code>.
+        Pořadí vývodů lze změnit pomocí panelu <a href="../pnl/pruzkumnik.htm">Průzkumník</a>.
+    </p>
+    <img src="img/poradi-vyvodu.png" style="border: 1px silver solid;" />
+
+
+    <br style="clear:both;" /><br />
+    <h2>Otestujte svojí značku</h2>
+    <p>
+        Než začnete používat nově nakreslenou značku, vyzkoušejte ji v prázdném výkresu.
+        Vložte ji několikrát do výkresu, zkuste jestli k ní jdou připojit spoje a jestli vypadá konzistentně s jinými značkami se kterými bude používána.
+    </p>
+    <p>
+        Pokud jste si nakreslili více značek, můžete je vytisknout pomocí funkce <code>Výstupy - hromadný tisk značek</code> a zkontrolovat že vypadají jak mají.
+    </p>
+
+    <h2>
+        Přejmenování značky
+    </h2>
+    <p>
+        Název značky odpovídá názvu souboru, v kterém je uložena, takže přejmenování provedete
+        v libovolném manažeru souborů (např. Windows Commander, Total Commander, Průzkumník Windows atd.)
+    </p>
+    <h2>Přesun značky do jiné skupiny</h2>
+    <p>
+        Provedete přesunem značky do jiného adresáře v libovolném manažeru souborů.
+    </p>
+
+    <h2>Vymazání značky nebo IO</h2>
+    <p>Provedete smazáním souboru značky v libovolném manažeru souborů.</p>
+
+    <h2>Vnořené značky</h2>
+    <p>Značka může obsahovat jiné značky. Vnořené značky nemohou obsahovat text (jedná se o omezení programu).</p>
+
+
+
+    <!--
+        <h2>Nechte si nakreslit značky</h2>
+        <p>
+    Pokud se kreslením značek nechcete sami zabývat, můžete si je nechat nakreslit za poplatek. Cena závisí na počtu značek a pracnosti. Pro dotazy <a href="//www.proficad.cz/nazor.htm">použijte kontaktní formulář</a>.
+        </p>
+        -->
+    <p>&#160;</p>
+
+</body>
+</html>

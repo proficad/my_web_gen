@@ -1,0 +1,91 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>kreslení elektrotechnických schémat</title>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+	<body>
+		<h1>Kreslení elektrotechnických schémat</h1>
+
+        <h2>Existují 4 způsoby vkládání značek do výkresu:</h2>	
+	
+	
+		<h3>1) Panel "Značky graficky"</h3>
+		<p>
+            Najeďte myší na panel značek. Objeví se paleta značek odpovídající skupiny. 
+            Značku vložte do schématu levým tlačítkem myši. Pravým tlačítkem myši můžete 
+            značku otevřít v editoru značek.
+        </p>
+		<p>Další postup je stejný jako u textové verze panelu značek.</p>
+
+
+		<h3>2) Panel <a href="../pnl/znacky.htm">Značky textově</a></h3>
+	
+        <h3>3) Panel <a href="../pnl/oblibene.htm">Oblíbené</a></h3>
+
+        <h3>4) Panel <a href="../pnl/hledani-znacek.htm">Hledání značek</a></h3>
+
+		<h3>Postup pro trafa a hradla:</h3>
+        <p>Zvolte příkaz <code>Vložit - Trafo</code> nebo <code>Vložit - Hradlo</code>. 
+        Klikněte ve výkresu kde má být značka vložena. Pravým tlačítkem myši na značce vyvoláte dialogové okno, kde lze nastavit vlastnosti značky (u trafa počet vinutí, u hradla typ hradla).
+        </p>
+		<h2>vlastnosti značek</h2>
+        <img src="../img/celemProp.png" style="float: right; margin: 10px;" />	
+        <p>Dvojklikem na značce vyvoláte panel Vlastnosti. Každá součástka má dvě základní vlastnosti: referenci a typ.</p>
+
+		<p><b>Reference</b> je označení typu značky, např. R pro rezistor, C pro kondenzátor, 
+			T pro tranzistor atd.</p>
+		<p><b>Typ</b> je určení elektrických vlastností značky, např. odpor v <font face="Symbol">
+				W, </font>kapacita v pF, u tranzistoru konkrétní typ atd.</p>
+		<p>Dále lze u každé značky nastavit polohy popisek těchto dvou vlastností. 
+			Jednotkou jsou desetiny mm. Tyto polohy lze jednodušeji nastavit taháním textu myší. 
+			Nastavení pomocí číselných údajů použijte pouze pokud potřebujete větší přesnost.</p>
+		<p>Poslední vlastností je volba, zda se mají popisky zobrazovat. Využijete je v 
+			případě, že nechcete aby popisky byly vidět v dokumentu, ale potřebujete je pro 
+			popisku značek nebo netlist.</p>
+		<p>Pokud se jedná o součástku, která není z Vaší knihovny (schéma jste od někoho dostali),
+            můžete ji 
+			pomocí odkazu <code>Uložit kopii</code> uložit na disk a rozšířit tak svoji knihovnu značek.</p>
+
+
+		<h4>Posouvání značek ve výkresu</h4>
+		<p>Posouvání značek se provádí tímto postupem:</p>
+        <ol>
+        	<li>Klikněte na součástce levým tlačítkem myši.</li>
+        	<li>Přetáhněte součástku na požadované místo se stisknutým tlačítkem myši.</li>
+        	<li>Značky se automaticky přichytávají do rastru. Chcete-li umístit součástku 
+			mimo rastr, posouvejte součástku se stisknutou klávesou Shift.</li>
+        	<li>Lze posouvat i více značek najednou, pokud byly předem označeny.</li>
+        	<li>Součástku lze posouvat na velmi malé vzdálenosti pomocí kurzorových 
+			kláves (musí být předem označeny). Při stisku kurzorové klávesy se označené 
+			značky přesunou o jednu desetinu mm příslušným směrem.</li>
+        </ol>
+
+		
+        <h4>Automatické číslování</h4>
+		<p>Všechny značky vkládané do schématu jsou automaticky číslovány - tj. je 
+			číslována jejich reference. Například pokud typ značky je "R", jsou značky 
+			označovány jako "R1", "R2"... atd. Pokud součástka nemá zadánu implicitní reference, jsou jí 
+			přiřazována pouze čísla, tj. "1", "2"... atd.</p>
+		<p>Automatické číslování má význam hlavně pro přehlednější rozpisku značek a pro 
+			generátor netlistu, který vyžaduje, aby každá součástka ve schématu měla 
+			unikátní typ.</p>
+		
+        <h4>Barevné schématické značky</h4>
+		<p>Schématické značky ve schématu lze obarvit příkazem menu <code>Objekt - Barva obrysu</code>.</p>			
+		
+        <h4>Barevné výplně značek</h4>
+        <p>
+        Některé značky mohou být vybarveny. Týká se to značek, které mají uzavřené plochy, tj. kruhy, elipsy, obdélníky, polygony, kruhové úseče a výseče. 
+        </p>
+        <p>
+        Barva výplně se nastavuje v panelu Vlastnosti, nebo (pokud chcete vybarvit více značek) příkazem <code>Objekt - barva výplně</code>. Plochy které byly vybarveny v editoru značek si ponechávají svou barvu .
+        </p>
+            <img src="img/elektro-znacky-barevne.png" alt="elektro značky barevně" />
+        <p>
+        Při vybarvení značky může nastat situace, že některé čáry zmizí, protože jsou zakryty vybarvenou oblastí. V takovém případě značku otevřete (pravým tlačítkem myši v panelu značek) a změňte pořadí objektů v panelu Průzkumník. Uzavřené plochy dejte na začátek seznamu, aby nezakrývaly jiné objekty.
+        </p>
+
+
+	</body>
+</html>

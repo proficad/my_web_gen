@@ -1,0 +1,68 @@
+﻿<html>
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Hypertextové odkazy</title>
+	    <link rel="stylesheet" type="text/css" href="../style.css" />
+        <style>
+            td {
+                background-color: #fff;
+                padding: 7px;
+            }
+
+            table .caption {
+                background-color: #ffc;
+            }
+
+            th {
+                background-color: #ffc;
+            }
+        </style>
+	</head>
+    <body>
+        <h1>Hypertextové odkazy</h1>
+        <p></p>
+
+        <p>Hypertextové odkazy mohou odkazovat na libovolnou stránku nebo značku projektu. Po kliknutí na odkaz dojde k přechodu na cílovou stránku nebo značku.</p>
+        <p>Postup vytvoření odkazu:</p>
+        <ol>
+            <li><a href="vkladani-textu.htm">Vložte do výkresu text</a> a <a href="prace-s-objekty.htm">vyberte ho</a>.</li>
+            <li>V panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> zadejte ve skupině <code>Ostatní</code> hodnotu <code>Odkaz</code> ve formátu:</li>
+        </ol>
+        <table border="1" cellspacing="0" cellpadding="10" style="float:right;">
+            <tr style="background-color: #ffc;">
+                <th>typ odkazu</th>
+                <th>formát</th>
+                <th>příklad</th>
+            </tr>
+            <tr>
+                <td>na stránku</td>
+                <td>/krátký název stránky</td>
+                <td>/AUX</td>
+            </tr>
+            <tr>
+                <td>na značku</td>
+                <td>značka/krátký název stránky</td>
+                <td>W5/AUX</td>
+            </tr>
+            <tr>
+                <td>na soubor *)</td>
+                <td>file:/// + cesta na soubor</td>
+                <td>file:///D:/smlouvy/smlouva.pdf </td>
+            </tr>
+            <tr>
+                <td>na webovou stránku</td>
+                <td>http:// nebo https:// + zbytek URL </td>
+                <td>https://www.proficad.cz/</td>
+            </tr>
+        </table>
+        <p>*) Odkaz na soubor lze jednoduše vytvořit kliknutím na odkaz <code>propojit cíl</code> v dolní části panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a></p>
+
+        <p>Aby nedocházelo k nechtěnému posuvu při kliknutí na odkaz, je třeba pro posuv odkazu držet stisknutou klávesu <code>F6</code>.</p>
+
+        <img src="https://www.proficad.com/img/news/v9.3.5/font-under-color.png" style="float:right; margin: 7px;" />
+        <p>Je vhodné nastavit vzhled textu tak, aby bylo zřejmé že se jedná o odkaz - tj. modrou barvou a podtržený.</p>
+
+
+
+    </body>
+</html>

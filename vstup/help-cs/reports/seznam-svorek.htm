@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Seznam svorek</title>
+</head>
+<body>
+    <h1>Seznam svorek</h1>
+    <p>Seznam svorek (menu <code>Výstupy - Seznam svorek</code>) obsahuje seznam svorek výkresu. Pro každou svorku jsou uvedeny:</p>
+    <ul>
+        <li>název spoje</li>
+        <li>název kabelu</li>
+        <li>připojená značka a název vývodu</li>
+        <li>zóna souřadnicové sítě značky</li>
+    </ul>
+    <h4>Příklad</h4>
+    <p>Pro toto zapojení:</p>
+    <img src="img/seznam-svorek-schema.png" alt="schéma: seznam svorek" style="width: 630px;" />
+    <p>Vygeneruje program tento seznam svorek:</p>
+    <img src="img/seznam-svorek-report.png" alt="sestava: seznam svorek" style="width: 630px;" />
+    <p>Vstup svorky je zobrazen vlevo, výstup vpravo od svorky.</p>
+
+    <h4>Nastavení značek v knihovně</h4>
+    <p>Značky které představují svorky musí být správně nastaveny. Toto nastavení nemusíte provádět, pokud jste instalovali od po 21. 3. 2017 nebo pokud si stáhnete <a href="https://gallery.proficad.com/down/t/t_cs.zip">tyto již nastavené značky</a>.</p>
+
+    <h5>Nastavení funkce <code>svorka</code> v knihovně značek:</h5>
+    <ol>
+        <li>Otevřete značku v knihovně</li>
+        <li>Vyvolejte příkaz menu <code>Soubor - Nastavení (F12)</code></li>
+        <li>Vyberte <code>Značka</code></li>
+        <li>Pro pole <code>Funkce</code> vyberte hodnotu <code>Svorka</code></li>
+    </ol>
+
+    <h4>Nastavení značek ve výkresu</h4>
+
+    <h5>1) Postup nastavení vývodů svorek:</h5>
+    <ul>
+        <li>Ve výkresu klikněte pravým tlačítkem na svorku a vyberte příkaz <code>Vývody</code></li>
+        <li>Pro každý vývod zadejte název a směr (jestli jde o vstup (IN) nebo výstup (OUT)). Směr se mění dvojklikem na políčko. Názvy svorek by se měly vyskytovat vždy ve dvojicích (jedna vstupní a jedna výstupní), jako na obrázku: <img src="https://www.proficad.cz/help/pe/img/vyvody.png" alt="vývody značek" style="width: 500px; float: right; margin:6px;" /> </li>
+        <li style="clear:both;">Potvrďte klávesou OK. Klikněte pravým tlačítkem na svorku a vyberte <code>uložit popisky a čísla vývodů</code>. Tím se změny uloží do knihovny.</li>
+    </ul>
+    <h5>2) Postup nastavení funkce <code>svorka</code>:</h5>
+    <ul>
+        <li>Vyberte svorku ve výkresu</li>
+        <li>V panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> vyberte Funkce: Svorka</li>
+    </ul>
+    <p>Nastavení se projeví pro všechny svorky stejného typu ve výkresu.</p>
+
+
+</body>
+</html>

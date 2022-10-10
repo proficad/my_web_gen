@@ -1,0 +1,41 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	<title>Netlist</title>	
+	</head>
+	<body>
+		<h1>Netlist</h1>
+		<p>Netlist se vygeneruje příkazem <code>Výstupy - Netlist</code>.</p>
+		<p>Před vlastním vygenerováním netlistu se provede kontrola správnosti pojmenování 
+			všech značek. Každá součástka musí mít zadán typ a tento typ musí být 
+			unikátní v celém dokumentu. Typ se zadává v dialogovém okně, které se zobrazí 
+			dvojitým kliknutím na součástce. Pokud jsou nalezeny chyby, namísto netlistu se 
+			vygeneruje pouze seznam těchto chyb.
+		</p>
+		<p>Netlist je ve formátu RACAL REDAC. Každý řádek netlistu představuje jeden uzel. 
+			Každý uzel je tvořen seznamem značek a jejich vývodů oddělených mezerou. 
+			Např. uzel R1 1 T3 2 znamená propojení prvního vývodu rezistoru R1 s druhým 
+			vývodem tranzistoru T3.
+		</p>
+		<p>Vývody značek jsou číslovány automaticky podle pořadí, v jakém byly zadány v 
+			knihovně značek pomocí editoru značek. Pro ověření čísel vývodů zapněte 
+			(krátkodobě) zobrazení čísel vývodů značek - menu Zobrazit - Čísla vývodů.
+		</p>
+		<p>Kritériem pro posouzení vodivosti značky a spoje je to, zda konec vývodu a 
+			konec spoje mají přesně stejnou polohu. Proto zapojujte obvod (kreslete spoje) 
+			až poté co jsou všechny značky na svých místech. Nebezpečí je v posunování 
+			značek pomocí kurzorových kláves, které posunuje součástku o 1 desetinu mm a 
+			není proto vidět.
+		</p>
+		<p>Po vygenerování netlistu si zapněte zobrazování čísel vývodů (menu "Zobrazit" - 
+			"Čísla vývodů") a proveďte kontrolu správnosti.
+		</p>
+		<h4>Příklad netlistu</h4>
+		<p>Pro toto schéma</p>
+		<p>&#160;<img src="../img/DE/klopobv.png" alt="klopný obvod" /></p>
+		<p>vytvořil program tento netlist:</p>
+		<p><img border="0" src="../img/DE/netlist.png" width="290" height="244" alt="netlist" /></p>
+
+	</body>
+</html>

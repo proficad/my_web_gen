@@ -1,0 +1,154 @@
+﻿<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>kreslení grafických objektů</title>
+</head>
+<body>
+    <h1>Kreslení grafických objektů</h1>
+    <p>
+        Grafické objekty slouží k znázornění doplňujících
+        částí elektrických zařízení, jako jsou mechanické vazby, ohraničení
+        funkčních celků, znázornění mechanických součástí atd.
+    </p>
+    <p>
+        Kreslení grafických objektů se spustí některým
+        z příkazů v menu <code>Nakreslit</code>, nebo stiskem tlačítka na nástrojové
+        liště.
+    </p>
+
+    <h4>Výběr</h4>
+    <p>Pro přepnutí do režimu <code>Výběr</code> proveďte jednu z těchto akcí:</p>
+    <ul>
+        <li>stiskněte klávesu <code>Esc</code></li>
+        <li>stiskněte tlačítko <img src="img/select.png" /></li>
+        <li>přejeďte myší do oblasti nástrojových lišt v horní části okna</li>
+    </ul>
+
+    <h4><img border="1" src="../img/DE/buttons/line.bmp" width="32" height="32" />&#160;&#160;&#160;Čára</h4>
+    <p>
+        Po volbě tohoto příkazu klikněte v místě,
+        kde má čára začínat, přemístěte ukazatel myši na místo koncového bodu
+        čáry a stiskněte levé tlačítko myši. Nyní můžete buď nakreslit další čáru, nebo přejít
+        do výběrového režimu.
+    </p>
+    <h4><img border="1" src="../img/DE/buttons/mline.bmp" width="32" height="32" />&#160;&#160;&#160;Lomená čára</h4>
+    <p>
+        Po volbě tohoto příkazu klikněte v místě,
+        kde má čára začínat, přemístěte ukazatel myši na místo dalšího bodu
+        čáry, klikněte a tímto postupem nakreslete celou čáru.
+        Nepovedenou odbočku můžete vzít zpět klávesou <code>Backspace</code>.
+        Čáru ukončíte stiskem klávesy Esc.
+    </p>
+    <h4><img border="1" src="../img/DE/buttons/bezi.bmp" width="32" height="32" />&#160;&#160;&#160;Křivka</h4>
+    <p>
+        Tato funkce umožňuje nakreslit jednu nebo několik
+        na sebe navazujících Bezierových křivek. Křivky jsou na sebe automaticky
+        navazovány tak, aby jejich spojení bylo plynulé.
+    </p>
+    <p>
+        Po volbě tohoto příkazu klikněte v místě,
+        kde má křivka začínat, přemístěte ukazatel myši na místo dalšího bodu
+        křivky, klikněte a tímto postupem nakreslete celou křivku. Křivku ukončíte
+        stiskem klávesy <code>Esc</code>.
+    </p>
+    <p><img border="0" src="../img/PE/bezier.png" width="378" height="213" /></p>
+    <p>
+        Tvar Bezierovy křivky je určen čtyřmi body: dva
+        koncové body a dva řídící. Konce křivky jsou určeny koncovými body. Tvar
+        křivky je dále ovlivněn řídícími body, které fungují jako magnety, které
+        svojí polohou a vzdáleností od koncových bodů tvarují křivku, která tak
+        může nabývat nejrůznější tvary.
+    </p>
+
+    <h4><img border="1" src="../img/DE/buttons/rect.bmp" width="32" height="32" />&#160;&#160;&#160;Obdélník</h4>
+    <p>
+        Po volbě tohoto příkazu klikněte v místě,
+        kde má být levý horní roh obdélníku, pak klikněte v místě kde má být pravý
+        dolní roh. Nyní můžete buď nakreslit další obdélník,
+        nebo přejít do výběrového režimu.
+    </p>
+
+    <h4><img border="1" src="../img/DE/buttons/rrect.bmp" width="32" height="32" />&#160;&#160;&#160;Zaoblený obdélník</h4>
+    <p>Postup je stejný jako u obdélníku, ale je zde ještě třetí bod, kterým se řídí zaoblenost obdélníku.</p>
+
+    <h4><img border="1" src="../img/DE/buttons/arc3p.bmp" width="32" height="32" />&#160;&#160;&#160;Oblouk definovaný 3 body</h4>
+    <p>
+        Kreslení oblouku zahájíte pomocí příkazu menu <code>Nakreslit</code> - <code>Oblouk definovaný 3 body</code> nebo pomocí této ikony: <img src="https://www.proficad.com/img/icons/arc3p.png" alt="ikona oblouk pomocí 3 bodů" />.
+    </p>
+    <img src="https://www.proficad.com/img/news/v12/arc3p.png" alt="oblouk definovaný třemi body" />
+    <p>
+        Prvním kliknutím myši stanovíte počáteční bod <pink>(1)</pink>, dalším kliknutím bod <pink>(2)</pink> kterým oblouk prochází, a třetím kliknutím koncový bod <pink>(3)</pink> oblouku.
+    </p>
+    <p>Kreslení oblouků ukončíte stiskem klávesy <code>Esc</code>.</p>
+
+
+
+    <h4>
+        <img src="../img/DE/buttons/arc.bmp" width="32" height="32" />&#160;&#160;&#160;
+        <img border="1" src="../img/DE/buttons/chord.bmp" width="32" height="32" />&#160;&#160;&#160;
+        <img border="1" src="../img/DE/buttons/pie.bmp" width="32" height="32" />&#160;&#160;&#160;Oblouk vestavěný, kruhová úseč a kruhová výseč
+    </h4>
+    <p>
+        Postup je stejný jako u obdélníku, ale je zde ještě
+        třeba nastavit úhly pro počáteční a koncový úhel oblouku. Hodnoty úhlů nastavte v panelu Vlastnosti v desetinách stupně.
+    </p>
+    <p>
+        <img src="../img/angles.png" />&#160;
+    </p>
+
+    <h4><img border="1" src="../img/DE/buttons/elli.bmp" width="32" height="32" />&#160;&#160;&#160;Elipsa</h4>
+    <p>Postup je stejný jako u obdélníku - místo obdélníku se vykreslí elipsa vepsaná do obdélníku.</p>
+
+    <h4><img border="1" src="../img/DE/buttons/pline.bmp" width="32" height="32" />&#160;&#160;&#160;Polygon</h4>
+    <p>Kreslí polygon - mnohoúhelník.</p>
+    <p>Postupně klikejte v místech kde mají být vrcholy polygonu. Polygon ukončíte stiskem klávesy <code>Esc</code>.</p>
+
+    <h4><img border="1" src="../img/DE/buttons/outlet.bmp" width="32" height="32" />&#160;&#160;&#160;Vývod</h4>
+    <p>
+        Vývod lze vložit pouze při editaci značek (dokument .ppd). Je definován jedním
+        bodem. Pro lepší názornost je tento bod zobrazen červeně a pokud je vývod právě
+        aktivní je červená tečka větší.
+    </p>
+
+    <h4>Jak nakreslit šipku</h4>
+    <p>
+        Nakreslete čáru, beziérovu křivku nebo oblouk. Vyberte typ šipky v panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a>.
+        Směr šipky můžete změnit kliknutím na odkaz <code>prohodit konce</code> v dolní části panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a>.
+    </p>
+
+    <h4>Pravoúhlé kreslení</h4>
+    <p>
+        Pokud během kreslení čar přidržíte klávesu <code>Ctrl</code>, čáry se kreslí vodorovně, svisle
+        nebo pod úhlem 45°. Obdélníky a elipsy jsou v tomto režimu kresleny jako čtverce
+        a kruhy.
+    </p>
+
+    <h4>Možnost přidat nebo ubrat body čáry nebo polygonu</h4>
+    <p>Tato funkce umožňuje přidat nebo ubrat bod čáry nebo polygonu.</p>
+
+    <img src="https://www.proficad.com/img/news/v8/832/add-point.png" alt="ubrat bod" />
+    <img src="https://www.proficad.com/img/news/v8/832/remove-point.png" alt="přidat bod" />
+
+    <p>Postup:</p>
+    <ul>
+        <li>Vyberte čáru nebo polygon.</li>
+        <li>Vyberte příkaz menu <code>Upravit - Přidat nebo ubrat body</code>.</li>
+        <li>Kliknutím na hraně čáry přidejte bod <pink>(A)</pink>.</li>
+        <li>Kliknutím na uzlu čáry odeberte bod <pink>(B)</pink>.</li>
+        <li>Klávesou <code>Esc</code> se vraťte do režimu Výběr.</li>
+    </ul>
+
+    <h4>Rovnoměrná úprava řídících bodů beziérovy křivky</h4>
+    <img src="https://www.proficad.com/img/news/v8/832/bezier.gif" alt="úprava řídících bodů beziérovy křivky" />
+
+    <p>Pokud je při posouvání řídících bodů beziérovy křivky stisknuta klávesa <code>Ctrl</code>, program posouvá protilehlý řídící bod tak, aby byl oblouk plynulý.</p>
+
+    <h4>Přerušovaná čára</h4>
+    <p>Vyberte čáru a v panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> nastavte <code>typ čáry</code>. Pomocí vlastnosti <code>měřítko čáry</code> můžete změnit velikost segmentů čáry. Tato hodnota se zadává s tečkou místo desetinné čárky. Například hodnota 1.3 zvýší délky segmentů čáry na 130 %.</p>
+
+    <h4>Šrafování</h4>
+    <p>Vyberte uzavřený grafický objekt a v panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> vyberte <code>typ šrafování</code>.</p>
+
+</body>
+</html>

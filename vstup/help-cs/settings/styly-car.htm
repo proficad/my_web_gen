@@ -1,0 +1,55 @@
+﻿<html>
+	<head>
+	<title>styly čar</title>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+	<body>
+		<h1>Styly čar</h1>
+		<p>Program ProfiCAD používá předdefinované styly čar ve formátu LIN který se rovněž používá v některých CAD systémech.
+		Definice čar jsou uloženy v souborech s koncovkou lin, které jsou umístěny v adresáři _LIN v knihovně značek. 
+		Souborů může být i několik - v takovém případě se definice čar sloučí (tj. jsou k dispozici styly ze všech souborů).</p>
+        <p>
+            &#160;</p>
+
+        <p>
+            V panelu Vlastnosti lze nastavit styl čáry pomocí tohoto dialogu:
+        </p>
+        <p>
+            <img src="../img/linesDlg.png" />&#160;</p>
+        <h4>
+		
+		Formát LIN:</h4>
+        <p>
+		Jde o textový soubor. Každá definice čáry obsahuje dva řádky. První řádek začíná znakem *, následuje název stylu čáry, čárka a popis stylu. Druhý řádek začíná znaky A, a řadou několika čísel oddělených čárkami.</p>
+        <p>
+		První číslo značí délku segmentu čáry. Další číslo délku mezery
+		Další číslo opět délku čáry	atd. Jednotkami jsou centimetry. Výjimkou je číslo 0 které značí tečku.
+        </p>
+		<p>
+            Příklad:</p>
+        <p>
+            *čerchovaná (2x), ____ . ____ . ____ . ___
+        </p>
+        <p>
+            A,1.0,-.5,0,-.5</p>
+        <p>
+            První řádek obsahuje název stylu</p>
+        <p>
+            1.0 značí čárku dlouhou 1"</p>
+        <p>
+            .5 značí mezeru</p>
+        <p>
+            0 značí tečku</p>
+        <p>
+            .5 značí mezeru</p>
+        <p>
+            a pak se vše opakuje.</p>
+        <p>Pro lepší pochopení doporučujeme prostudovat soubor lines.lin v adresáři _LIN.</p>
+        <p>
+            &#160;</p>
+        <p>
+            &#160;</p>
+
+</body>
+</html>

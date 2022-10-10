@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>práce s objekty</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<h1>Práce s objekty</h1>
+<p>S objekty (součástkami, grafickými objekty a texty) lze provádět další
+operace:</p>
+
+<h4>výběr objektů</h4>
+<p>Objekt (součástku nebo grafický objekt) vybereme levým tlačítkem myši.
+Více objektů vybereme levým tlačítkem myši za současného držení kláves
+<code>Ctrl + Shift</code>. Jsou-li objekty, které chceme vybrat v pravoúhlé oblasti, můžeme je
+vybrat tímto způsobem:</p>
+<p>1. klikneme levým tlačítkem myši v levém horním rohu zamýšlené
+oblasti.</p>
+<p>2. přesuneme ukazatel myši do pravého dolního rohu oblasti za stálého
+držení levého tlačítka myši.
+</p>
+
+<h4>klonování objektů</h4>
+<p>Pokud potřebujete vložit ještě jeden objekt stejného typu, jaký už ve výkresu máte, 
+stiskněte klávesu <code>Ctrl</code> a objekt posuňte levým tlačítkem myši (jako kdybyste chtěli objekt přesunout).
+Vytvoří se kopie původního objektu.</p>	
+
+<a name="rotate"><h4>otáčení</h4></a>
+<p>Značky, obrázky a samostatné texty lze otáčet těmito způsoby:</p>
+<ul>
+    <li>Pomocí menu <code>Objekt</code> - <code>Otočit</code></li>
+    <li>Pomocí těchto ikon: <img src="../buttons/otaceni.png" style="position: relative; top: 0.4em;" /> </li>
+    <li>V panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> - položka <code>úhel natočení</code> (zadávejte úhel v desetinách stupně, tj. např. 30° zadejte jako 300)</li>
+    <li>Pomocí myši tažením kulatého řídícího bodu. Úhel se nastaví s krokem 15°. Pokud je stisknutá klávesa <code>Shift</code>, lze nastavit libovolný úhel.</li>
+</ul>
+    <img src="img/rotate-symbol.png" alt="otáčení" style="width:150px;" />
+
+<h4>překlápění</h4>
+<p>
+    značky a některé grafické objekty lze překlápět horizontálně i vertikálně. Slouží
+    k tomu příkazy z menu <code>Objekt</code> - <code>Překlopit</code> a zde vyberte
+    buď horizontálně, nebo vertikálně. Lze použít i ikony na nástrojové liště.
+    <img src="../buttons/preklapeni.png" alt="překlápění" />
+</p>
+
+<h4>jak smazat objekt</h4>
+<p>Vyberte objekt (pomocí myši nebo panelu <a href="../pnl/pruzkumnik.htm">Průzkumník</a>) a stiskněte klávesu <code>Delete</code> na vaší klávesnici.</p>
+
+<h4>zarovnávání</h4>
+<p>značky, texty i grafické objekty lze zarovnávat. Slouží k tomu příkazy
+menu <code>Zarovnat</code>. Tyto příkaz jsou dostupné poté, co označíte
+alespoň dva objekty. Lze zarovnávat na levou a pravou hranu, podle svislé
+osy, na horní a dolní hranu a podle vodorovné osy. Zarovnává se vždy podle
+toho objektu, který označíte jako první.
+</p>
+<img src="img/zarovnat.png" alt="zarovnat" />
+
+<h4>změna pořadí grafických objektů</h4>
+<p>Kliknutím pravým tlačítkem na objektu se objeví příkazy <code>přenést dopředu</code>, <code>přenést blíž</code>, <code>přenést dál</code> a <code>přenést dozadu</code>.</p>
+<img src="img/změna-pořadí.png" alt="změna-pořadí.png" />
+
+<h4>dostupnost popsaných operací</h4>
+<p>Tabulka shrnuje které operace na kterých objektech lze provádět:</p>
+<table border="1" cellspacing="0" cellpadding="2">
+  <tr>
+    <td style="background-color: #FFFF99">&#160;</td>
+    <td style="background-color: #FFFF99" align="center">značky</td>
+    <td style="background-color: #FFFF99" align="center">grafické objekty</td>
+    <td style="background-color: #FFFF99" align="center">texty</td>
+    <td style="background-color: #FFFF99" align="center">skupiny značek i se spoji</td>
+  </tr>
+  <tr>
+    <td style="background-color: #FFFF80">otáčení</td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#FF0000">NE</font></td>
+    <td align="center"><font color="#008000">ANO (pouze jednořádkové)</font></td>
+    <td align="center"><font color="#FF0000">NE</font></td>
+  </tr>
+  <tr>
+    <td style="background-color: #FFFF80">překlápění</td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center">čáry, křivky a polygony</td>
+    <td align="center"><font color="#FF0000">NE</font></td>
+    <td align="center"><font color="#008000">ANO</font></td>
+  </tr>
+  <tr>
+    <td style="background-color: #FFFF80">zarovnávání</td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#FF0000">NE</font></td>
+  </tr>
+  <tr>
+    <td style="background-color: #FFFF80">změna pořadí grafických objektů</td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#008000">ANO</font></td>
+    <td align="center"><font color="#FF0000">NE</font></td>
+  </tr>
+</table>
+</body>
+</html>

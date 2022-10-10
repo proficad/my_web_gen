@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+
+<project name="xhtml-web" default="generuj">
+
+      <target name="clean">
+        <delete>
+          <fileset>
+            <include name="vystup\**" />
+          </fileset>
+        </delete>
+      </target>
+  
+  
+  
+      <target name="generuj" depends="clean">
+       
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}">
+        <infiles>
+   			  <include name="vstup\help-${arg.lang}\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>
+		  </style>
+        
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\de">
+        <infiles>
+          <include name="vstup\help-${arg.lang}\de\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>        
+      </style>
+       
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\basic">
+        <infiles>
+          <include name="vstup\help-${arg.lang}\basic\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>        
+      </style>
+        
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\pe">
+        <infiles>
+          <include name="vstup\help-${arg.lang}\pe\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>
+      </style>
+        
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\pnl">
+        <infiles>
+          <include name="vstup\help-${arg.lang}\pnl\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>
+      </style>
+        
+      <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\tb">
+        <infiles>
+          <include name="vstup\help-${arg.lang}\tb\*.htm" />
+        </infiles>
+        <parameters>
+          <parameter name="lang" value="${arg.lang}"></parameter>
+        </parameters>
+      </style>
+
+        <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\reports">
+          <infiles>
+            <include name="vstup\help-${arg.lang}\reports\*.htm" />
+          </infiles>
+          <parameters>
+            <parameter name="lang" value="${arg.lang}"></parameter>
+          </parameters>
+        </style>
+
+        <style  style="sablona/sablonaP.xsl" destdir="vystup\${arg.lang}\settings">
+          <infiles>
+            <include name="vstup\help-${arg.lang}\settings\*.htm" />
+          </infiles>
+          <parameters>
+            <parameter name="lang" value="${arg.lang}"></parameter>
+          </parameters>
+        </style>
+		
+      </target>
+</project>

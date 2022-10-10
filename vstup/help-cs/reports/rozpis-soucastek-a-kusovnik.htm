@@ -1,0 +1,43 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	<title>Rozpis součástek</title>	
+	</head>
+    <body>
+        <h1>Rozpis součástek a kusovník</h1>
+        <p>
+            Rozpis značek se spouští příkazem <code>Výstupy - Rozpis součástek</code>.
+        </p>
+        <img src="img/rozpis-znacek.png" alt="rozpis značek" style="width:100%" />
+        <p>
+            Zaškrtnutím volby <code>seskupovat</code> se zobrazí kusovník.
+        </p>
+        <img src="img/kusovnik.png" alt="kusovník" />
+        <p>
+        </p>
+
+
+
+
+
+        <h2>Filtr rozpisu součástek</h2>
+        <p>Filtr umožňuje stanovit, které značky budou uvedeny v rozpisu součástek.</p>
+
+        <p>V okně s rozpisem součástek stiskněte tlačítko <code>Filtr</code>. Objeví se dialogové okno s kartami <code>Filtr značek</code> a <code>Filtr vrstev</code>.</p>
+
+        <img src="https://www.proficad.cz/help/reports/img/filtr-rozpisu-soucastek.png" style="width:100%" alt="filtr rozpisu součástek" />
+
+        <p>Filtr značek obsahuje dvě textová pole. Do pole <code>Zahrnout</code> uveďte názvy značek které mají být zahrnuty v rozpisu. Pokud je toto pole prázdné, zahrnou se všechny značky. Do pole <code>Vyloučit</code> uveďte názvy značek které mají být vyloučeny z rozpisu. </p>
+        <p>Každý název uveďte na jeden řádek. Stačí uvádět částečné názvy. Částečný název zahrne všechny značky, které obsahují tuto část. Filtr podporuje dva speciální znaky:</p>
+        <p>^ pro začátek názvu. Například <code>^pas</code> vybere všechny značky které začínají na "pas".</p>
+        <p>$ pro konec názvu. Například <code>nač$</code> vybere všechny značky které končí na "nač".</p>
+        <h4>Testovací oblast</h4>
+        <p>V pravé části okna je seznam značek, které slouží k otestování filtru. Seznam obsahuje buď pouze značky z <code>aktivního dokumentu</code>, nebo z <code>celé knihovny</code>.</p>
+        <p>Značky z <code>aktivního dokumentu</code> jsou uvedeny buď zeleně nebo červeně, podle toho, jestli prošly filtrem. </p>
+        <p>Značky z <code>celé knihovny</code> umožnují otestovat, jestli by byl filtr použitelný i pro značky které nejsou v aktivním dokumentu. Seznam značek z celé knihovny není barevný a jsou uvedeny pouze značky které prošly filtrem.</p>
+
+
+
+    </body>
+</html>

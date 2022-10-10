@@ -1,0 +1,72 @@
+﻿<html>
+	<head>
+	<title>Knihovna stylů</title>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+	<body>
+		<h1>Knihovna stylů</h1>
+ 
+        <p>
+            Knihovna stylů (menu <code>Upravit</code> - <code>Knihovna stylů</code>) umožňuje ukládat a znovu aplikovat často používané styly grafických objektů (barvu, typ čáry, typ výplně atd.).
+        </p>
+
+        <p>Styly v knihovně jsou zobrazeny:</p>
+
+        <p>
+            Jako čára: pro čáry a spoje<br />
+            Jako elipsa: pro objekty s výplní (obdélníky, elipsy, polygony atd.)
+        </p>
+
+
+        <p>Knihovna stylů obsahuje dvě části:</p>
+        <img src="img/styles/temp.png" style="width: 635px;" />
+        <p>Dočasné styly: zde se automaticky ukládá posledních 20 stylů které jste použili.</p>
+        <img src="img/styles/perm.png" style="width: 635px;" />
+        <p>Trvalé styly: zde jsou styly které chcete uchovat trvale</p>
+
+
+        <h4>Jak přidat styl do knihovny stylů</h4>
+        <p>
+            <a href="kopirovani-stylu.htm">Zkopírováním stylu</a> dojde automaticky k přidání stylu do knihovny. Styl je přidán do oblasti <code>dočasné styly</code>.
+        </p>
+
+
+        <h4>Jak přidat styl do trvalých stylů</h4>
+        <img src="img/styles/drag.png" style="width: 635px;" />
+        <p>
+            Přetáhněte ho myší na kartu <code>trvalé styly</code>. Analogicky můžete odstranit trvalý styl přetažením na kartu <code>dočasné styly</code>.
+        </p>
+
+        <h4>Jak použít styl z knihovny stylů</h4>
+        <ol>
+            <li>Ve výkresu vyberte cílový objekt</li>
+            <li>Vyvolejte příkaz menu <code>Upravit</code> - <code>Knihovna stylů</code></li>
+            <li>Vyberte styl (buď dočasný nebo trvalý)</li>
+            <li>Stiskněte tlačítko <code>Použít na vybrané objekty</code></li>
+        </ol>
+
+
+        <h4>Automatické použití stylu na spoje</h4>
+        <p>
+            Program umožňuje automaticky aplikovat styl na spoje s určitým názvem. Například styl s označením PEN bude aplikován na spoj s názvem PEN.
+        </p>
+
+        <p>Postup:</p>
+        <ol>
+            <li>V knihovně stylů v oblasti <code>trvalé styly</code> zadejte pro daný styl název spoje.</li>
+            <li>Nakreslete nový spoj a (v panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a>) zadejte název spoje.</li>
+        </ol>
+        <p>Program zkopíruje daný styl z knihovny na spoj.</p>
+
+        <h4>Kde jsou uloženy styly?</h4>
+        <p>
+            Styly jsou uloženy v <a href="../pe/knihovna-znacek.htm">knihovně značek</a>, v souborech <br />
+            _CONF\styles\temp.xml a _CONF\styles\perm.xml
+        </p>
+        
+
+
+
+</body>
+</html>

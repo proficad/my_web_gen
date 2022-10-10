@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<title>Knihovna značek</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<h1>Knihovna značek</h1>
+<p>Knihovna značek je instalována do adresáře "Dokumenty"/ProfiCAD Library. 
+Doporučujeme knihovnu přesunout do libovolného adresáře, který pravidelně zálohujete nebo nastavit zálohování na tento adresář. To provedete v nastavení programu (<code>F12 - Cesty</code>).
+</p>
+
+<p>
+Knihovna by měla obsahovat několik adresářů, které se zobrazí v seznamu <pink>(1)</pink>. Při výběru položky ze seznamu <pink>(1)</pink> se zobrazí jeho podadresáře v oblasti <pink>(2)</pink>. Při výběru položky z oblasti <pink>(2)</pink> se zobrazí adresáře a značky v oblasti <pink>(3)</pink>.
+</p>
+<p>
+Značky (soubory .ppd a .picd) by neměly být přímo v úrovních <pink>(1)</pink> a <pink>(2)</pink>, protože pak by se neměly kde zobrazit.
+</p>
+
+<img src="img/knihovna-elektro-znacek.png" alt="knihovna elektro značek" />
+
+<p>Program ProfiCAD - kreslení elektrotechnických schémat pracuje s třemi typy značek:</p>
+<ul>
+    <li>
+        <b>značky z knihoven</b> - načítají se ze souborů s příponou PPD. Tyto
+        značky lze editovat pomocí editoru značek.
+    </li>
+    <li>
+        <b>integrované obvody</b> - načítají se ze souborů s příponou PICD. Tyto
+        značky lze editovat pomocí editoru značek.
+    </li>
+    <li>
+        <b>značky vestavěné</b> - hradla a transformátory. U těchto značek lze
+        měnit některé parametry (počty vývodů, vinutí atd.)
+    </li>
+</ul>
+
+<p>Knihovnu značek a IO tvoří soubory s příponou "PPD" pro značky a "PICD" 
+	pro IO. Každý soubor obsahuje jednu značku.
+</p>
+
+<p>Pro rozsáhlejší práci se skupinami můžete použít libovolný manažer
+souborů, např. Windows Commander, Total Commander, Průzkumník Windows atd.</p>
+
+<div style="float:left;margin-bottom: 20px;margin-right: 20px;">    
+<h4>Založení skupiny</h4>
+<p>
+    Provedete vytvořením adresáře v knihovně značek.</p>
+<h4>Přejmenování skupiny</h4>
+<p>
+    Provedete přejmenováním adresáře v knihovně značek.</p>
+<h4>Vymazání skupiny</h4>
+<p>
+    Provedete vymazáním adresáře v knihovně značek.</p>
+</div>
+
+
+<br style="clear:both;" />
+
+
+		<p>
+             Knihovna obsahuje adresáře začínající znakem "_" které mají speciální účel:</p>
+        <p>
+        _TB : slouží k ukládání popisových polí (soubory s koncovkou ptb)<br />
+        _LIN : slouží k ukládání definicí čar (soubory s koncovkou lin)<br />
+        _conf: další informace, například výchozí atributy značek
+        </p>
+
+    <p>Značky byly vytvořeny s pomocí těchto norem:</p>
+    <ul>
+        <li>Většina značek je podle normy EN 60617.</li>
+        <li>Některé značky (používané v USA) jsou podle normy  IEEE Std 315-1975 a ANSI Y32.2-1975</li>
+        <li>Značky pro průmyslové procesy jsou podle EN ISO 10628.</li>
+        <li>IEC 61082 - Zhotovování dokumentů používaných v elektrotechnice.</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>křížové odkazy</title>
+<style type="text/css">
+img{border: silver solid 1px;}
+</style>
+</head>
+<body>
+<h1>Křížové odkazy</h1>
+<h2>vodiče</h2>
+<p>
+Pokud mají dva vodiče stejný název, považují se za vodivě propojené. Název se zadává v panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a>. Pokud vodič končí ve vzduchu a na jiné stránce existuje jiný vodič se stejným názvem, automaticky se zobrazí odkaz na druhý vodič.
+</p>
+
+<h2>značky</h2>
+
+<p>
+Komponenta je elektrické zařízení, které obsahuje několik značek.
+</p>
+
+<p>
+Například cívka relé a kontakty. Hlavní značka je cívka relé, podružné značky jsou jednotlivé kontakty.
+</p>
+
+    <img src="img/refs/hlavni%20a%20podruzna%20znacka.png" />
+
+<p>
+Hlavní značka komponenty by měla mít označení (v panelu <a href="../pnl/vlastnosti.htm">
+    Vlastnosti</a> zadat referenci) například K5.
+    Podružné značky budou mít stejné označení + tečka + číslo, například K5.1, K5.2
+</p>
+
+<p>
+Podružné značky se normálně nezobrazují v rozpisce. Pokud chcete, aby se zobrazovaly, zaškrtněte volbu <code>zobrazovat podružné značky</code>.
+</p>
+
+<p>
+Pokud budete dodržovat tento způsob označení, zobrazí se u každé značky, která je součástí komponenty odkaz na ostatní značky.
+</p>
+
+<p>
+Obrázek ukazuje relé na straně 1
+</p>
+
+    <img src="img/refs/rele%20s%20odkazy.png" />
+
+<p>
+a jeho kontakty na straně 2
+</p>
+    <img src="img/refs/kontakty%20s%20odkazy.png" />
+<p>
+Odkazy jsou zobrazovány ve formátu <strong>reference/stránka.zóna</strong>, v souladu s normou EN 61082-1 článek 5.8
+</p>
+
+<p>
+Generování odkazů je třeba <strong>zapnout</strong> v <code>F12</code> - <code>Systém</code> - <code>Značky</code> - <code>Vytvářet křížové odkazy značek</code> a <code>Vytvářet křížové odkazy spojů</code>.
+</p>
+
+
+</body>
+</html>

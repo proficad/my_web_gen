@@ -1,0 +1,159 @@
+﻿<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Nastavení programu</title>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<style type="text/css"> 
+        .linksMenu {margin-top:3em;margin-bottom:3em;margin-left:3em;}
+        .linksMenu a{text-decoration:none;}
+        .linksMenu a:hover{background-color:#FFFFCC;}
+        img {
+            border: silver dotted 1px;
+            box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style> 
+</head>
+<body>
+    <h1>Nastavení programu</h1>
+
+    <p>
+        Po spuštění příkazu <code>Soubor</code> - <code>Nastavení...</code> nebo stisku klávesy <code>F12</code> se objeví dialogové
+        okno které slouží k nastavení programu a aktuálního dokumentu.
+    </p>
+    <p>Okno má tato nastavení:</p>
+
+    <a href="#s1">cesty</a><br />
+    <a href="#s2">ovládání</a><br />
+    <a href="#s3">značky</a><br />
+    <a href="#s4">ostatní</a><br />
+    <a href="#s5">spoje</a><br />
+
+
+
+    <br style="clear:both;"></br>
+    <a name="s1">&#160;</a>
+    <h2>Systém - Cesty</h2>
+    <img src="img/cesty.png" />
+
+    <h4>Knihovna značek</h4>
+    <p>Zadejte cestu na hlavní (kořenový adresář) kde jsou uloženy schématické značky (PPD a PICD soubory).</p>
+
+
+    <a name="s2">&#160;</a>
+    <h2>Systém - Ovládání</h2>
+    <img src="img/ovladani.png" />
+
+    <h4>Používat UNDO/REDO</h4>
+    <p>
+        Funkce UNDO/REDO umožňuje jednoduše vzít zpět poslední akci.
+    </p>
+
+
+    <h4>Počet mezikroků při změně měřítka</h4>
+    <p>
+        změna měřítka probíhá plynule, aby neunavovala oči. Vyšší hodnota znamená plynulost, nížší hodnota rychlost.
+    </p>
+
+    <h4>Vyžadovat potvrzení při mazání</h4>
+    <p>
+        umožňuje aktivovat/deaktivovat zobrazování kontrolního dotazu "Vymazat označené
+        objekty?" během mazání.
+    </p>
+
+    <h4>Automatické ukládání</h4>
+    <p>
+        umožňuje aktivovat/deaktivovat automatické ukládání neuložených dokumentů. Automatické
+        ukládání ukládá pouze dokumenty, které již byly alespoň jednou ručně uloženy.
+    </p>
+    <p>
+        Volba "Vytvářet záložní kopii" vytvoří záložní kopii dokumentu při každém jeho uložení. Záložní kopie vždy nahradí předchozí záložní kopii. Záložní kopie mají příponu souboru
+        BAK a ukládají se do stejné složky jako původní dokument.
+    </p>
+    <p>POZOR: Tato volba nenahrazuje <a href="../basic/zalohovani.htm">řádné zálohování</a> !!!</p>
+
+
+
+    <a name="s3">&#160;</a>
+    <h2>Systém - Značky</h2>
+    <img src="img/znacky.png" /><br />
+    <h3>Přečíslování značek při kopírování</h3>
+    <p>Je zde několik voleb které si vysvětlíme na příkladu: máme značky F3, F4, F5 a F8. Zkopírujeme F4 a dostaneme:</p>
+    <table>
+        <tr>
+            <td>Nepřečíslovávat</td><td>F4</td>
+        </tr>
+        <tr>
+            <td>Přidělit první volnou hodnotu od 1</td><td>F1</td>
+        </tr>
+        <tr>
+            <td>Přidělit nejbližší volnou hodnotu</td><td>F6</td>
+        </tr>
+        <tr>
+            <td>Přidělit nejvyšší hodnotu</td><td>F9</td>
+        </tr>
+        <tr>
+            <td>Přičíst tuto hodnotu</td><td>Přičte se hodnota kterou zadáte</td>
+        </tr>
+    </table>
+
+
+    <h3>Formát odkazů</h3>
+    <p>Je zde možnost volby mezi označením stránky číslem stránky nebo krátkým názvem stránky.</p>
+
+    <h3>Počáteční měřítko značek</h3>
+    <p>Je možno nastavit výchozí poměr velikosti nově vkládaných značek do výkresu.</p>
+
+    <h3>Koeficient tloušťky značek a spojů.</h3>
+    <p>Zde můžete zadat koeficient, kterým se vynásobí tloíšťky čar a spojů. Například pokud zadáte koeficient 1.5, změní se tloušťka čáry 0.2 mm na 0.3 mm (1.5 x 0.2 = 0.3). </p>
+
+    <a name="s4">&#160;</a>
+    <h2>Systém - Ostatní</h2>
+    <h4>Velikost pracovní plochy editoru značek a popisových polí</h4>
+    <p>
+        Pokud vytváříte větší značky, můžete si zde zvolit vyšší hodnotu.
+        Pro popisová pole se použije dvojnásobná hodnota než kterou zde uvedete.
+    </p>
+
+    <h4>Jazykové prostředí</h4>
+    <p>Zde můžete nastavit jazyk programu.</p>
+    
+    <p>Toto nastavení nemá žádný vliv na jazyk značek. Pokud jste omylem nainstalovali program v nežádoucím jazyku, odinstalujte program a nainstalujte ho znovu v jazyku který si přejete.</p>
+    
+    <p>Pokud potřebujete vytvářet výkresy v různých jazycích, nainstalujte program vícekrát, pro každý jazyk který potřebujete. Vaše knihovna značek pak bude obsahovat značky ve všech jazycích.</p>
+
+    <h4>Pamatovat vlastnosti čar a spojů</h4>
+    <p>
+        Pokud změníte barvu nebo tloušťku čáry nebo spoje, další čára nebo spoj je
+        kreslen touto barvou a tloušťkou.
+    </p>
+
+    <h4>Při startu programu provádět aktualizaci</h4>
+    <p>
+        Pokud je tato volba zaškrtnuta, při každém spuštění programu se provádí kontrola, zda máte nejnovější verzi programu.
+        Pokud je na serveru zjištěna novější verze, zahájí se stahování a instalace programu.
+        V takovém případě se v pravém dolním rohu obrazovky objeví upozornění o instalaci nové verze.
+        Po ukončení stahování dojde k automatickému restartování programu ProfiCAD.
+    </p>
+    <p>
+        Doporučujeme ponechat tuto volbu aktivní, abyste vždy měli aktuální verzi.
+        Pouze pokud nemáte trvalé připojení k internetu, je vhodné tuto volbu deaktivovat a
+        kontrolu na novou verzi provádět ručně příkazem menu <code>Nápověda</code> - <code>Aktualizovat</code>.
+    </p>
+    <img src="img/others.png" /><br />
+    <br />
+    <a name="s5">&#160;</a>
+    <h2>Systém - Spoje</h2>
+    <h4>Automatické zapojování značek</h4>
+    <p>
+        Program umožňuje zapojit značku do existujícího spoje. Při vložení značky na spoj dojde k automatickému zapojení značky. Při smazání značky dojde k obnovení spoje.
+    </p>
+    <img src="img/auto.gif" alt="automatické zapojování značek" style="margin: 5px;" />
+    <p>
+        Když se značka pohybuje přes spoj, spoj se zvýrazní.
+    </p>
+
+    <p>Pokud určitou značku nelze automaticky zapojit, může to být tím, že spoj je mimo snap. Zkuste zvýšit zoom a pohybujte značkou se stisknutou klávesou <code>Shift</code> (aby se eliminoval vliv Snapu).</p>
+
+
+</body>
+</html>

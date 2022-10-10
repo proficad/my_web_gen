@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>kreslení kabelů</title>
+<style type="text/css">
+img{border: silver solid 1px;}
+</style>
+</head>
+<body>
+    <h1>Kreslení kabelů</h1>
+    <p>Program umožňuje kreslit kabelové značky a vytváří výpis kabelů.</p>
+
+    <p style="clear:both;">
+        Vyberte příkaz menu <code>Vložit - Kabel</code> a myší přeškrtněte spoje které tvoří kabel.
+    </p>
+    <img src="img/cable_1.png" style="margin: auto 2%; border:silver 1px solid;" />
+    <img src="img/cable_2.png" style="margin: auto 2%; border:silver 1px solid;" />
+    <p style="clear:both;">
+        Objeví se dialogové okno, kde zadejte název, typ a odhadovanou délku kabelu.
+        V dolní části dialogového okna je oblast Označení žil. Pro každou žílu kabelu lze zadat její označení a jestli má být označení viditelné. Označení žil se zobrazí ve výkresu a v tiskové sestavě <a href="../reports/vypis-kabelu.htm">Výpis kabelů</a>.
+        Kreslení kabelů ukončete stiskem klávesy <code>Esc</code>.
+    </p>
+    <img src="img/nastaveni-kabelu.png" alt="nastavení kabelu" style="width:635px" />
+    
+    <div class="note">
+        Poznámka:
+        <p>
+            Během kreslení značky kabelu dojde k označení spojů pod značkou jako součást tohoto kabelu. Pokud značku kabelu posunete (nebo zkopírujete) nad jiné spoje, nebudou tyto spoje správně označené.
+        </p>
+        <p>Jak opravit označení spojů jako součást kabelu:</p>
+        <ol>
+            <li>Vyberte vodič (spoj)</li>
+            <li>V panelu <a href="../pnl/vlastnosti.htm">Vlastnosti</a> zadejte do políčka <code>kabel</code> název kabelu.</li>
+        </ol>
+    </div>
+    
+    <p>
+        Správce kabelů (menu <code>Výstupy - Správce kabelů</code>) umožňuje zobrazit všechny kabely výkresu a nastavovat jejich vlastnosti. Lze měnit název, typ a délku kabelu.
+    </p>
+    <p>
+        Výpis kabelů (menu <code>Výstupy - Výpis kabelů</code>) umožňuje tisknout seznam kabelů. Zaškrtnutím volby <code>seskupovat</code> se zobrazí součet délek kabelů podle typů kabelů.
+    </p>
+    <p>Jak změnit název, typ nebo délku kabelu:</p>
+    <ul>
+        <li>klikněte pravým tlačítkem na značce kabelu a vyberte <code>Vlastnosti</code>. Zobrazí se dialogové okno pro změnu údajů kabelu</li>
+        <li>změňte hodnoty v tabulce ve <code>Správci kabelů</code></li>
+    </ul>
+    
+<h2>Kabely s více značkami</h2>
+<p>Jeden kabel může mít více značek se stejným názvem, 
+    například když kabel pokračuje na jiné stránce, 
+    nebo když je každá značka jen pro určité žíly kabelu.</p>
+
+<h3>Jak přejmenovat kabel</h3>
+<p>a) v panelu Vlastnosti - přejmenují se všechny značky daného kabelu.</p>
+<p>b) klikněte pravým tlačítkem na značce kabelu a vyberte <code>Vlastnosti</code> - přejmenuje se jen tato značka.</p>
+
+</body>
+</html>

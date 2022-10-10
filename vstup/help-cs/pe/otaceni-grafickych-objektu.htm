@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+<title>Otáčení grafických objektů</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<h1>Otáčení grafických objektů</h1>
+
+<p>Otáčení grafických objektů se vyvolá funkcí menu <code>Objekt - Trvale otočit</code>. Objeví se dialogové okno, kde zadáme o kolik stupňů se mají objekty otočit a kolem kterého bodu.
+</p>
+    <p>
+        Existují 2 typy otáčení:</p>
+    <p>
+        1. typ (čáry, polygony a bezierovy křivky) - každý bod objektu se pootočí o zadaný
+        úhel podle zadaného středu.</p>
+    <p>
+        2. typ (ostatní objekty) - střed objektu se pootočí o zadaný úhel podle zadaného
+        středu, jinak se objekt neotáčí.</p>
+<img border="1" src="img/rotate/dlg.JPG" />
+<p>otáčení grafických objektů si ukážeme na příkladu vytvoření značky třífázového stroje:</p>
+
+
+
+<table>
+    <tr>
+        <td>
+        <h4>krok 1</h4>
+        Vytvoříme první větev stroje, která obsahuje dvě čáry, tři beziérovy křivky a jeden vývod.</td>
+        <td><img border="1" src="img/rotate/1.JPG" /></td>
+    </tr>
+    <tr>
+        <td>
+            <h4>krok 2</h4>
+            Všechny tyto objekty vybereme myší a přeneseme do schránky Windows klávesami <code>Ctrl+C</code>.
+            Pak vyvoláme příkaz menu <code>Objekt - Trvale otočit</code>. Objeví se dialogové okno, kde zadáme 120°.
+        </td>
+        <td><img border="1" src="img/rotate/2.JPG" /></td>
+    </tr>
+    <tr>
+        <td>
+        <h4>krok 3</h4>
+        Vložíme původní větev klávesami <code>Ctrl+V</code>. Větev vybereme myší a otočíme, tentokrát o -120°.</td>
+        <td><img border="1" src="img/rotate/3.JPG" /></td>
+    </tr>
+    <tr>
+        <td>
+        <h4>krok 4</h4>
+        Opět vložíme původní větev. Stroj je hotov.</td>
+        <td><img border="1" src="img/rotate/4.JPG" /></td>
+    </tr>
+</table>
+
+</body>
+</html>

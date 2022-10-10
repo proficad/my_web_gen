@@ -1,0 +1,54 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Export do formátu DXF</title>
+	</head>
+	<body>
+		<h1>Export do formátu DXF</h1>
+<p>DXF je formát vyvinutý firmou Autodesk pro výměnu dat mezi CAD programy.</p>
+
+<p>ProfiCAD umožňuje převádět dokumenty do formátu DXF verze 21 (AutoCad 2007).</p>
+<h4>Export pomocí webového rozhraní</h4>
+<p>Na adrese <a href="//gallery.proficad.com/tools/ProfiCAD-AutoCAD.aspx" target="_blank">//gallery.proficad.com/tools/ProfiCAD-AutoCAD.aspx</a> (Nápověda - Převodník do formátu DXF) je k dispozici bezplatný převodník schémat ProfiCADu (formát SXE) do formátu DXF.</p>
+
+
+<h4>Export přímo z programu</h4>
+<p>
+    Je k dispozici pouze v placené verzi programu. Příkazem menu <code>Výstupy - Export do 
+    DXF</code> vyvoláme převod aktuálního dokumentu. Objeví se dialogové okno, kde zadáme 
+    cestu kam má být soubor vyexportován. 
+</p>
+<p>
+    Větší množství výkresů je možno převést do formátu DXF dávkově z příkazové řádky.
+</p>
+<img src="img/export_dxf.png" alt="export to DXF" />
+<p>Postup:</p>
+<ol>
+    <li>Spusťte příkazovou řádku.</li>
+    <li>Přejděte do adresáře kde je program nainstalován (pravděpodobně C:\Program Files\ProfiCAD\)</li>
+    <li>Přejděte do podadresáře "lib"</li>
+    <li>Spusťte příkaz<br />
+    <b>for /r "cesta_kde_jsou_soubory_k_převodu"  %g in (*.sxe) do ProfiCAD2Dxf.exe "%g"</b><br />
+    Pokud například výkresy které potřebujete převést jsou v adresáři "h:\test", příkaz bude vypadat takto:<br />
+    <b>for /r "h:\test\"  %g in (*.sxe) do ProfiCAD2Dxf.exe "%g"</b>
+    </li> 
+    <li>Příkaz převede všechny výkresy na uvedené cestě včetně podadresářů</li>
+
+</ol>
+
+<p>
+	Soubor, který převádíme, musí být na disku ve verzi 5 nebo novější. Nestačí tedy otevřít v 
+	ProfiCADu 5 soubor který je dosud ve verzi 4 nebo 3. Musí být alespoň jednou 
+	uložen, aby se převedl do aktuální verze.
+</p>
+<p>
+    Tato funkce vyžaduje aby na počítači byl naistalován Microsoft .NET Framework 
+    Version 4.0 nebo novější.
+</p>
+<p>
+Dále je nutné, aby byla (alespoň jednou) spuštěna aktualizace programu, protože potřebné soubory se instalují během aktualizace.
+</p>
+
+	</body>
+</html>

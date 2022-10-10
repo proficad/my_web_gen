@@ -1,0 +1,139 @@
+﻿<html>
+	<head>
+	<title>komponenty ProfiCADu</title>
+
+<my_url>https://www.proficad.cz/help/basic/komponenty-proficadu.htm</my_url>
+
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <style type="text/css">
+          table {
+              border: Silver 1px solid;
+              overflow-x: auto;
+          }
+         th{background-color:#ffc;}
+      </style>
+	</head>
+	<body>
+		<h1>Komponenty ProfiCADu</h1>
+		
+ <table border="1" cellspacing="0" cellpadding="10">
+			<tr>
+				<th>soubor</th>
+				<th>popis</th>
+				<th>umístění</th>
+			</tr>
+			<tr>
+				<td>ProfiCAD.exe</td>
+				<td>editor dokumentů - schémat, značek i popisových polí</td>
+				<td>adresář programu</td>
+			</tr>
+			<tr>
+				<td>ProfiCAD.chm</td>
+				<td>nápověda programu ProfiCAD</td>
+				<td>adresář programu</td>
+			</tr>
+			<tr>
+				<td>common.dll<br />
+                    mfc100u.dll<br />
+                    msvcp100.dll<br />
+                    msvcr100.dll</td>
+				<td>dynamické knihovny potřebné pro provoz programu</td>
+				<td>adresář programu</td>
+			</tr>			
+			<tr>
+				<td>key.dat</td>
+				<td>licenční klíč který obdržíte po zakoupení programu</td>
+				<td>adresář "Dokumenty" nebo adresář programu</td>
+      </tr>		
+			<tr>
+				<td>česky.ini<br />
+                    english.ini<br />
+                    ... atd.</td>
+				<td>Obsahuje textové řetězce použité v programu.</td>
+				<td>adresář programu\lang</td>
+			</tr>				      	
+	<tr>
+		<td>několik souborů s příponou .ppd a .picd</td>
+		<td>tyto soubory tvoří knihovnu součástek a IO, v každém souboru je jedna součástka</td>
+		<td>&quot;Dokumenty&quot;\ProfiCAD library</td>
+	</tr>
+	<tr>
+		<td>soubory s příponou .lin</td>
+		<td>tyto soubory obsahují definice stylů čar</td>
+		<td>&quot;Dokumenty&quot;\ProfiCAD library\_LIN</td>
+	</tr>
+	<tr>
+		<td>soubory s příponou .ptb</td>
+		<td>tyto soubory obsahují definice popisových polí</td>
+		<td>&quot;Dokumenty&quot;\ProfiCAD library\_TB</td>
+	</tr>
+      <tr>
+				<td>několik souborů s příponou .sxe</td>
+				<td>vzorová schémata</td>
+				<td>
+                    &quot;Dokumenty&quot;\ProfiCAD library\schémata</td>
+			</tr>
+      <tr>
+				<td>charmap.txt</td>
+				<td>obsahuje seznam znaků pro rychlé vkládání do textu</td>
+				<td>C:\Documents and Settings\vaše_jméno\Data aplikací\ProfiCAD</td>
+			</tr>
+      <tr>
+				<td>favs.txt *</td>
+				<td>obsahuje seznam oblíbených schématických značek</td>
+				<td>C:\Documents and Settings\vaše_jméno\Data aplikací\ProfiCAD</td>
+			</tr>
+      <tr>
+				<td>ProfiCAD.wsp *</td>
+				<td>obsahuje seznam dokumentů které byly otevřeny při posledním ukončení práce s programem</td>
+				<td>C:\Documents and Settings\vaše_jméno\Data aplikací\ProfiCAD</td>
+			</tr>
+      <tr>
+				<td>updater.exe</td>
+				<td>provádí ruční i automatické aktualizace porgramu.</td>
+				<td>adresář programu\updater</td>
+			</tr>
+      <tr>
+				<td>settings.ini</td>
+				<td>konfigurační soubor programu updater</td>
+				<td>adresář programu\updater</td>
+			</tr>
+      <tr>
+				<td>česky.xml<br />
+                    slovensky.xml<br />
+                    ... atd.</td>
+				<td>jazykové prostředí programu updater</td>
+				<td>adresář programu\updater\lng</td>
+			</tr>
+
+      <tr>
+				<td>Několik souborů s příponou exe a dll</td>
+				<td>doplňkové knihovny</td>
+				<td>adresář programu\lib\</td>
+      </tr>
+
+		</table>
+	
+		<p>* tyto soubory se neinstalují, vzniknou až provozováním programu.</p>
+		<h2>Přemístění programu</h2>
+		<p>Pokud potřebujete program přemístit do jiného adresáře nebo na jiný počítač, 
+    stačí přemístit výše uvedené soubory. Není nutné použít instalační program.
+    Program je možné provozovat i z externího disku nebo flashdisku.
+    </p>		
+
+        <h2>Nastavení firewallu</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td>URL pro automatické updaty:</td>
+                <td>http://upd.proficad.eu</td>
+            </tr>
+            <tr>
+                <td>URL pro aktivaci:</td>
+                <td>http://www.proficad.cz</td>
+            </tr>
+        </table>
+       
+
+	</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<html>
+	<head>
+	<title>Vlastnosti elektrotechnických značek</title>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+	<body>
+		<h1>Vlastnosti elektrotechnických značek</h1>		
+    <p>Každá značka může obsahovat číslo (podle normy), implicitní referenci, implicitní typ a poznámku. Pokud
+        je značka otevřena (dvojklikem na značce), lze nastavit tyto hodnoty v Nastavení
+        programu (<code>F12</code>) - <code>Značka</code>.</p>
+        <p>
+            <img src="../settings/img/symbolSetup.png" />&#160;</p>
+
+		<p><b>Číslo</b> je údaj o normě, kde je tvar značky normalizován a čísle 
+			značky v této normě. Tento údaj slouží pouze pro orientaci a není povinný. Je uváděn ve tvaru norma:číslo, například ČSN EN 60617: 04-01-01</p>
+
+		<p><b>Výchozí reference</b> je označení typu značky, např. R pro rezistor, C pro kondenzátor, 
+			T pro tranzistor atd.&#160;které bude použito po vložení značky do schématu. Reference se budou při vložení značky do výkresu automaticky číslovat.</p>
+
+		<p><b>Výchozí typ</b> je určení elektrických vlastností značky, např. odpor v <font face="Symbol">
+				W, </font>kapacita v pF, u tranzistoru konkrétní typ atd. Tato hodnota bude 
+			použita ve schématu jako implicitní, později je možné ji změnit. Pokud tato 
+			hodnota není vyplněna, nebudou ve schématu reference a typ značky viditelné.</p>
+		<p><b>Poznámka</b> - zde je možno uvést libovolnou poznámku.&#160;</p>
+        <br />
+
+
+		<p><b>Příklad:</b></p>
+		<p>U rezistoru zadáte (v editoru značek) referenci "R" a typ "10K". V editoru 
+			schémat budete vkládat rezistory, první bude "R1", "10K", druhý bude "R2", 
+			"10K" atd. Reference i typ <b>budou</b> viditelné. Hodnoty pak změníte podle skutečné potřeby.</p>
+		
+        <p>U ukostření zadáte referenci "zem", typ necháte prázdný. V editoru schémat budete 
+			vkládat ukostření, první bude "zem1", druhé "zem2" atd. Reference ani typ <b>nebudou</b> viditelné, protože nebyla vyplněna reference.</p>
+	
+        <h2>Výchozí reference a typ</h2>
+        <p>Výchozí reference a typy značek můžete snadno nastavit pomocí nástroje <code>Konfigurace knihovny</code>. Vyberte příkaz menu <code>Soubor</code> - <code>Konfigurace knihovny</code>. Vyberte kartu <code>Značky</code>. V levé části vyberte skupinu značek. V pravé části zadejte výchozí referenci a typ pro danou značku. Po dokončení změn vyvolejte příkaz menu <code>Zobrazit</code> - <code>Znovu načíst položky</code>.</p>
+
+    </body>
+</html>

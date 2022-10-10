@@ -1,0 +1,336 @@
+﻿<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>často kladené otázky a odpovědi</title>
+	<my_url>https://www.proficad.cz/help/basic/casto-kladene-otazky-a-odpovedi.htm</my_url>
+</head>
+<body>
+
+    <img src="img/question-info.png" style="float:right; margin-top: 13px;" />
+
+    <h1>Často kladené otázky a odpovědi</h1>
+
+    <div id="accordion-faq">
+
+        <h2>V panelu značek je většina značek zobrazena jen jako prázdné čverečky</h2>
+        <div class="accordion-content-faq">
+            <p>
+                Stáhněte si <a href="https://www.proficad.cz/downalt.aspx">verzi 10</a> a převeďte značky do nového formátu pomocí příkazu <code>Soubor</code> - <code>Konverze značek</code>. Pak můžete instalovat novější verzi programu.
+                Doporučujeme odebírat <a href="https://www.proficad.cz/subscribe/subscribe.aspx">náš newsletter</a>, kde na podobné důležité akce jako je konverze značek včas upozorňujeme.
+            </p>
+        </div>
+
+        <h2>Jak nastavit orientaci stránky na výšku nebo na šířku?</h2>
+        <div class="accordion-content-faq">
+            <p>
+                Viz <a href="../settings/nastaveni-tisku.htm">nastavení tisku</a> a <a href="../settings/velikost-stranky.htm">velikost stránky</a>.
+            </p>
+        </div>
+
+
+
+        <h2>
+            Jak mám nastavit, aby určitá značka ve výkresu měla automaticky číslovanou referenci "RT", tj. RT1, RT2 … atd.
+        </h2>
+        <div class="accordion-content-faq">
+            <p>
+                <ol>
+                    <li>Otevřete značku (pravým kliknutím v paletě značek)</li>
+                    <li>Stiskněte klávesu F12</li>
+                    <li> Vyberte položku "Značka"</li>
+                    <li>Do políčka "implicitní reference" zadejte RT</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Nejde otevřít výkres</h2>
+        <div class="accordion-content-faq">
+            <ol>
+                <li>Pokud nejde výkres otevřít dvojklikem v průzkumníku Windows, použijte menu <code>Soubor</code> - <code>Otevřít</code>.</li>
+                <li>Možná byl výkres vytvořen v novější verzi programu. To zjistíte tak, že výkres otevřete v textovém editoru (např. program Notepad). Verze výkresu je uvedena v čitelné podobě na začátku souboru.</li>
+                <li>Pokud se výkres v textovém editoru zobrazí jako nečitelná změť znaků, nejedná se o výkres ProfiCAD. V tomto případě je možné, že výkres byl poškozen virem.</li>
+            </ol>
+
+        </div>
+        
+        <h2>Ve ýkresu se objevuje grafický objekt který nejde smazat. Objevuje se i na nové stránce</h2>
+        <div class="accordion-content-faq">
+            <p>
+                Zkontrolujte jestli objekt není součástí popisového pole.
+            </p>
+        </div>
+
+        <h2>Nejde otevřít panel Vlastnosti</h2>
+        <div class="accordion-content-faq">
+            V registrech Windows smažte klíč <code>HKEY_CURRENT_USER\Software\ProfiCAD\ProfiCAD\DockingPaneLayouts\panes.8.2.0</code> a spusťte ProfiCAD znovu.
+        </div>
+
+            <h2>Objevuje se hláška "out of memory"</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    K tomu může dojít, pokud výkres obsahuje příliš velké obrázky (datová velikost mnoho MB). Jsou dvě možnosti řešení:
+                </p>
+                <ol>
+                    <li>Použijte příkaz <code>Soubor - Čistit</code>. Tím se z dokumentu odstraní nepotřebné objekty.</li>
+                    <li>Obrázky odstraňte, upravte je v grafickém programu (aby měly menší velikost) a znovu je vložte.</li>
+                </ol>
+
+
+            </div>
+
+
+            <h2>Zmizely mi typy čáry - vidím jen plnou čáru</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    V knihovně značek musí být adresář "_LIN" a v něm soubor
+                    <a href="//gallery.proficad.com/down/cs/lines.lin">lines.lin</a>
+                    Cestu na knihovnu značek zjistíte v
+                    <code>nastavení programu (F12) - Cesty</code>.
+                </p>
+            </div>
+
+
+            <h2>V souhrnných informacích jsem vyplnil název a doplňující název. V Popisovém poli se tyto údaje neobjevily.</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Tyto údaje jsou pro každou stránku jiné. Proto se zadávají v panelu <a href="https://www.proficad.cz/help/pnl/stranky.htm" target="_blank">Stránky</a> (dvojklikem na stránku).
+                    Pokud chcete, aby byly tuto údaje stejné pro všechny stránky, zadejte je v <code>F12 - proměnné</code> a smažte je z panelu <a href="https://www.proficad.cz/help/pnl/stranky.htm" target="_blank">Stránky</a>.
+                </p>
+            </div>
+
+            <h2>Nemohu pohybovat objekty ve výkresu</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Objekty jsou pravděpodobně v jiné vrstvě. Přepněte se do správné vrstvy pomocí panelu <a href="//www.proficad.cz/help/pnl/vrstvy.htm" target="_blank">Vrstvy</a>.
+                </p>
+            </div>
+
+
+            <h2>Nemohu připojovat spoje ke značkám</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Tento problém se může vyskytnout, pokud používáte antivirus McAfee. Řešením je odinstalovat ho.
+                </p>
+            </div>
+
+            <h2>Jak importovat PDF</h2>
+            <div class="accordion-content-faq">
+                <p>Program umožňuje vložit do výkresu obrázek ze schránky Windows. Jedná se o nejsnadnější způsob, jak do výkresu dostat obrázek z jiného zdroje, například z katalogu ve formátu PDF.</p>
+                <ol>
+                    <li>V dokumentu PDF co nejvíce zvětšete předlohu, aby obrázek nebyl rozrastrovaný. Například příkazem <code>zoom in</code>, nebo použijte kolečko myši se stisknutou klávesou <code>Ctrl</code>.</li>
+                    <li>Udělejte screenshot (snímek obrazovky). U Windows 10 stiskněte <code>Win</code>+<code>Shift</code>+<code>S</code>. U starších systémů stiskněte <code>PrtScn</code>.</li>
+                    <li>Přepněte do ProfiCADu a stiskněte <code>Ctrl</code> + <code>V</code>.</li>
+                </ol>
+            </div>
+
+
+            <h2>Kolem značky je žluté orámování, které je mnohem větší než samotná značka.</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Problém může mít dvě příčiny:
+                </p>
+                <p>
+                    1) Během vytváření značky vzniklo několik artefaktů
+                    (např. velmi malých čar, zapomenuté vývody atd.) které byly přehlédnuty. Ty pak
+                    způsobují, že značka je větší, protože jsou započteny do ohraničující plochy
+                    značky. Řešením je odstranit tyto artefakty, nejlépe s pomocí panelu Průzkumník.
+                    Pak je třeba nahradit značku ve schématu opravenou značkou. <br />
+                </p>
+                <p>
+                    2) Značka není vytvořena symetricky podle os pracovní plochy. Řešením je nakreslit ji symetricky.
+                </p>
+            </div>
+
+
+            <h2>Existuje verze pro Linux?</h2>
+            <div class="accordion-content-faq">
+                <p>Na Linuxu lze ProfiCAD provozovat pomocí Wine.</p>
+            </div>
+
+            <h2>Existuje verze pro Mac?</h2>
+            <div class="accordion-content-faq">
+                <p>Na počítačích Mac lze ProfiCAD provozovat pomocí programu Parallels.</p>
+            </div>
+
+            <h2>Jaké značky jsou obsaženy v placené verzi programu? Máte další značky z jiných oborů?</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Placená verze obsahuje vždy stejné značky jako verze pro domácnost. Knihovna značek je průběžně doplňována.
+                    Program obsahuje editor značek, který umožňuje snadno si nakreslit vlastní značky.
+                </p>
+                <p>
+                    Na adrese <a target="_blank" href="https://gallery.proficad.com">gallery.proficad.com</a> naleznete další značky které tam odeslali ostatní příznivci programu ProfiCAD.
+                    Pokud jste si vytvořili vlastní značky, můžete je odeslat do galerie a obohatit tak tuto knihovnu.
+                </p>
+            </div>
+
+
+            <h2>Jak mám dostat značky do panelu oblíbené?</h2>
+            <div class="accordion-content-faq">
+                <p>Přesuňte je myší na ikonu srdce.</p>
+            </div>
+
+            <h2>Jak nainstalovat novou verzi programu?</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Při změně hlavního čísla verze před tečkou (např. 7.x - 8.0):
+                </p>
+                <ul>
+                    <li>Zazálohujte všechny výkresy a značky</li>
+                    <li><a href="https://www.proficad.cz/stahnout.aspx">Stáhněte novou verzi</a> a nainstalujte</li>
+                    <li>Upgrade při změně hlavního čísla verze je <a href="https://www.proficad.cz/Koupit.aspx">placený</a></li>
+                </ul>
+                <p>Upgrady v rámci hlavní verze (např. 8.1 na 8.2) jsou zdarma a provedete je pomocí menu <code>Nápověda</code> - <code>Aktualizovat</code>.</p>
+            </div>
+
+            <h2>
+                Pokud opravím značku v editoru značek, změní se tato značka i
+                ve schématech kde již byla vložena?
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Ne! Nezmění, protože každá značka se ukládá do schématu jako
+                    kopie.
+                </p>
+            </div>
+
+            <h2>
+                Křížové vazby spoje nefungují
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Ujistěte se, že spoj má rovný konec (není zakončen kuličkou).
+                </p>
+                <img src="img/no-point.png" />
+            </div>
+
+
+            <h2>
+                Jak otevřít starý výkres (vytvořený před verzí 5)
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Řešením je dát si někam na disk verzi 10.
+                    Není třeba ji instalovat, stačí rozbalit toto:
+                    <a href="https://www.proficad.cz/down/10/62/proficad_portable_cs.zip">https://www.proficad.cz/down/10/62/proficad_portable_cs.zip</a>
+                    a vždy když najdete starý výkres, převést ho.
+                    To uděláte tak, že
+                    <ol>
+                        <li>Výkres otevřete ve verzi 10</li>
+                        <li>
+                            Provedete změny. U velmi starých výkresů je většinou potřeba
+                            upravit formát. Pokud ne, je provést nějakou změnu, jinak je ikonka
+                            "Uložit" neaktivní (zašedlá).
+                        </li>
+                        <li>Výkres uložíte. Nyní půjde výkres otevřít i ve verzi 11.</li>
+                    </ol>
+
+                </p>
+            </div>
+
+
+            <h2>
+                Při tisku na laserové tiskárně 5L jsou některé objekty a čáry
+                vytištěny rozmazaně a nevytiskne se celé schéma.
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Pomůže změnit rozlišení tisku z 600 DPI na 300 DPI (nastavení
+                    tisku - ve vlastnostech tiskárny).
+                </p>
+            </div>
+
+            <h2>Čárkovaná čára se vytiskne jako plná</h2>
+            <div class="accordion-content-faq">
+                <p>Další postup je u každé tiskárny trochu jiný.</p>
+                <ul>
+                    <li>Stiskněte tlačítko "Vlastnosti"</li>
+                    <li>Stiskněte tlačítko "Upřesnit"</li>
+                    <li>Vyhledejte "Kvalita tisku"</li>
+                    <li>Vyhledejte "Rozlišení"</li>
+                    <li>Najděte volby "Vektor" a "Rastr", vyberte "Rastr"</li>
+                </ul>
+            </div>
+
+
+
+            <h2>Nelze vybrat objekt - při klepnutí na objekt se vybere úplně jiný objekt, který je vzdálen od kurzoru.</h2>
+            <div class="accordion-content-faq">
+                <p>Při vytváření značky je třeba grafické objekty umísťovat tak, aby značka byla rozmístěna symetricky podle os pracovní plochy.</p>
+
+                <img src="../basic/img/center.png" alt="vycentrovat objekty" style="margin:10px;" />
+            </div>
+
+            <h2>
+                Jak zapojit spoje mezi součástkami které jsou daleko od sebe a nejsou vidět na
+                obrazovce najednou.
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    1. způsob: během kreslení spoje posouvejte pracovní plochu pomocí kurzorových
+                    kláves příslušným směrem.
+                </p>
+                <p>2. způsob: přepněte měřítko pohledu na menší hodnotu, např. 50 %.</p>
+            </div>
+
+
+            <h2>
+                Lze vytvářet další značky hradel? Při vkládání hradla se objeví vždy pouze
+                jedna schematická značka a nezjistil jsem, jak lze vložit jiné.
+            </h2>
+            <div class="accordion-content-faq">
+                <p>
+                    Po vložení hradla stiskněte klávesu Escape (aby se z kurzoru stala šipka), a
+                    klikněte pravým tlačítkem myši na hradlo. Objeví se dialogové okno, ve kterém
+                    lze nastavit mnoho voleb týkajících se typu hradla, počtu vstupů atd.
+                </p>
+            </div>
+
+            <h2>Nefunguje mi otvírání výkresů dvojklikem z průzkumníku Windows</h2>
+            <div class="accordion-content-faq">
+                <p>
+                    V průzkumníku Windows klikněte pravým tlačítkem myši na soubor s výkresem. Objeví se menu, kde vyberte „Otevřít v programu“ – „Zvolit výchozí program“ a vyberte ProfiCAD.
+                </p>
+                <p>
+                    Pokud to nepomůže, zkontrolovat v registrech (pouze pro pokročilé uživatele) a případně vytvořit tyto položky:
+                </p>
+                <p>
+                    HKEY_CLASSES_ROOT\.sxe = ProfiCAD.Document
+                    <br />
+                    HKEY_CLASSES_ROOT\ProfiCAD.Document\shell\open\command = ProfiCAD.EXE %1
+                    <br />
+                    HKEY_CLASSES_ROOT\ProfiCAD.Document\shell\open\ddeexec = [open("%1")]
+                    <br />
+                    HKEY_CLASSES_ROOT\ProfiCAD.Document = ProfiCAD.Document
+                    <br />
+                </p>
+                <p>
+                    Pokud by to nepomohlo, otvírejte výkresy z panelu Dokumenty se žlutou ikonou. Cestu na vaše výkresy nastavíte v nastavení programu – záložka „cesty“.
+                </p>
+            </div>
+
+        </div>
+
+        <p style="border-top:dotted silver 1px; padding-top: 0.7em;">Vaše dotazy posílejte pomocí <a href="https://www.proficad.cz/support/support.aspx">kontaktního formuláře</a></p>
+
+        <faq_script />
+
+        <style type="text/css">
+            .accordion-content-faq {
+                background-color: #C1F8D7;
+            }
+
+            #accordion-faq h2 {
+                border-top: dotted silver 1px;
+                padding-top: 0.7em;
+                cursor: pointer;
+            }
+
+                #accordion-faq h2.active {
+                    color: Green;
+                }
+        </style>
+
+</body>
+</html>

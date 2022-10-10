@@ -1,0 +1,12 @@
+*
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif
+}
+A:link { color: maroon; text-decoration: underline; color: blue;}
+A:visited { color: maroon; text-decoration: underline; color: blue;}
+A:hover{ text-decoration: underline; color: red; background-color: yellow;}
+
+ol {margin-left: 30px;}
+
+.command{font-family:Courier New;background-color:#ddd;}
+

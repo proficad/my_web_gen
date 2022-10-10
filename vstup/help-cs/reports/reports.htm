@@ -1,0 +1,60 @@
+﻿<html>
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	<title>Tiskové sestavy</title>	
+	</head>
+    <body>
+        <h1>Tiskové sestavy</h1>
+
+        <p>Tiskové sestavy existují ve dvou formách:</p>
+
+        <h2>Volné tiskové sestavy</h2>
+
+        <p>Zobrazují se pomocí menu <code>Výstupy</code>. Hodí se zejména pro vyplňování údajů o značkách a spojích, protože současně vidíte výkres i tiskovou sestavu. Editovaný objekt (značka nebo spoj) se zvýrazňuje ve výkresu.</p>
+
+        <h2>Vložené tiskové sestavy</h2>
+
+        <img src="https://www.proficad.com/help/pnl/img/pageButtons.png" alt="tlačítka panelu Stránky" />
+
+        <p>
+            Vkládají se do projektu pomocí tlačítka <pink>(8)</pink> v panelu <a href="../pnl/stranky.htm">Stránky</a>. Jsou trvalou součástí projektu, takže jsou vytištěny vždy když se tiskne projekt.
+            Stejnou tiskovou sestavu lze vložit do projektu víckrát. Například rozpis značek lze vložit jednou normálně a jednou seskupený podle typů značek.
+            Po potvrzení se tisková sestava vloží do výkresu jako nová stránka.
+        </p>
+
+        <p>Tiskové sestavy mohou mít jiný formát papíru než stránky s výkresy. Každá tisková sestava může mít jinou orientaci papíru.</p>
+
+        <h3>Jak nastavit formát papíru pro tiskové sestavy:</h3>
+
+        <p><code>F12</code> - <code>Dokument</code> - <code>Tiskové sestavy</code></p>
+
+        <h3>Jak nastavit orientaci papíru pro tiskové sestavy:</h3>
+
+        <p>V panelu <a href="../pnl/stranky.htm">Stránky</a> dvojklikem na stránku vyvolejte dialogové okno a zde vyberte záložku <code>orientace stránky</code>.</p>
+
+        <a name="columns">&#160;</a>
+        <h2>Sloupce</h2>
+        <p>
+            Sloupce upravíte kliknutím pravým tlačítkem myši v záhlaví tabulky. Objeví se menu, které umožňuje:
+        </p>
+        <img src="img/menu-sloupce.png" alt="menu sloupce" style="float:right;margin: 10px;" />
+        <ul>
+            <li>přidat nebo smazat sloupec</li>
+            <li>přesunout sloupec doleva nebo doprava</li>
+            <li>nastavit zarovnaní sloupce</li>
+            <li>nastavit proměnnou sloupce</li>
+        </ul>
+
+        <p>
+            Každý sloupec má přiřazenu proměnnou. Tu můžete změnit pomocí položky menu "Vlastnosti sloupce".
+        </p>
+        <p>
+            Každá tisková sestava obsahuje několik předdefinovaných proměnných. Některé tiskové sestavy (rozpis značek, výpis spojů a výpis kabelů) umožňují přidat sloupce s vlastní proměnnou. Tato vlastní proměnná je současně atributem dané značky nebo spoje.
+        </p>
+        <p>
+            Příklad (přidání výrobce): V seznamu značek vybereme příkaz "Nový sloupec". Zadáme vlastní proměnnou, zvolíme např <code>vyr</code> a název sloupce <code>Výrobce</code>. Potvrdíme tlačítkem OK. Nyní můžeme vyplnit výrobce pro jednotlivé položky. Každá značka bude mít nyní atribut <code>vyr</code> s hodnotou kterou jsme zadali.
+        </p>
+        <img src="img/novy-sloupec.png" alt="nový sloupec" style="width:400px;" />
+    </body>
+</html>

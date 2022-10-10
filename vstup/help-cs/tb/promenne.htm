@@ -1,0 +1,92 @@
+﻿<html>
+	<head>
+	<title>Proměnné</title>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+<body>
+<h1>Proměnné</h1>
+
+<p>Proměnné slouží k zobrazení proměnných informací v popisovém poli. Proměnné zapisujte ve tvaru {název-proměnné}. Program nahradí název proměnné její hodnotou.</p>
+
+<h2>Uživatelské proměnné</h2>
+<p>Hodnoty proměnných lze definovat pro celý dokument (<code>F12</code> - <code>Dokument</code> - <code>Proměnné</code>) nebo pro jednotlivou stránku (v dialogovém okně Nastavení stránky záložka <code>Proměnné</code>).</p>
+<p>Pokud je hodnota proměnné uvedena v obou případech (pro celý dokument a pro stránku), hodnota pro stránku má přednost.</p>
+
+
+<h2>Systémové proměnné</h2>
+<p>Systémové proměnné program vytváří automaticky</p>
+
+ <table border="1" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#ffffcc">
+            <td class="caption">název</td>
+            <td class="caption">význam</td>
+        </tr>
+        <tr>
+            <td>_path</td>
+            <td>cesta výkresu</td>
+        </tr>
+        <tr>
+            <td>_file</td>
+            <td>název souboru výkresu</td>
+        </tr>
+    </table>
+
+<p>Proměnné pro každou stránku zvlášť:</p>
+
+<table border="1" cellspacing="0" cellpadding="10">
+    <tr bgcolor="#ffffcc">
+        <td class="caption">název</td>
+        <td class="caption">význam</td>
+        <td class="caption">poznámka</td>
+    </tr>
+    <tr>
+        <td>_po</td>
+        <td>pořadové číslo stránky</td>
+        <td>page ordinary number</td>
+    </tr>
+    <tr>
+        <td>_pc</td>
+        <td>celkový počet stránek</td>
+        <td>pages count</td>
+    </tr>
+    <tr>
+        <td>_pcs</td>
+        <td>pořadové číslo stránky (vícestránkové sestavy: jeden list papíru = jedna stránka)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>_pcsc </td>
+        <td>celkový počet stránek (vícestránkové sestavy: jeden list papíru = jedna stránka)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>_pa</td>
+        <td>krátký název stránky</td>
+        <td>page abbr.</td>
+    </tr>
+    <tr>
+        <td>_potb</td>
+        <td>pořadové číslo stránky s popisovým polem</td>
+        <td>&#160;</td>
+    </tr>
+    <tr>
+        <td>_sc</td>
+        <td>měřítko stránky</td>
+        <td>scale</td>
+    </tr>
+    <tr>
+        <td>_du</td>
+        <td>jednotka kótování</td>
+        <td>dimension unit</td>
+    </tr>
+</table>
+
+<p>
+Například může popisové pole obsahovat údaj List: {_po}/{_pc} který se ve výkresu zobrazí například jako List: 3/10
+</p>
+
+<div class="note">Některé proměnné se správně zobrazují pouze v náhledu před tiskem a v tisku.</div>
+
+</body>
+</html>
